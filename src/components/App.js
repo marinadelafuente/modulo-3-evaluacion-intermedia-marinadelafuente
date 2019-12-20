@@ -3,8 +3,6 @@ import '../stylesheets/App.scss';
 import Pokelist from './Pokelist';
 import data from '../api/data.json';
 
-// console.log(data)
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,8 +13,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        {/* {JSON.stringify(this.state.pokemons)} */}
+      <div className="app">
+        <h1 className="title">Mi lista de Pokemon</h1>
         <Pokelist pokemons={this.state.pokemons} />
       </div>
     );

@@ -1,11 +1,11 @@
 import React from 'react';
+import '../stylesheets/Pokemon.scss';
 
 function Pokemon(props) {
-    // console.log(props.name);
     return (
         <li className="item-list">
-            <img className="img" src={props.url} alt={props.name}></img>
-            <h3 className="name">{props.name}</h3>
+            <img src={props.url} alt={props.name}></img>
+            <h2 className="name">{props.name}</h2>
             <div className="types">
                 {props.types.map((type, i) => {
                     return (

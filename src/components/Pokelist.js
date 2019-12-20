@@ -1,8 +1,8 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import '../stylesheets/Pokelist.scss';
 
 function Pokelist(props) {
-    // console.log(props.pokemons);
     return (
         <ul className="list">
             {props.pokemons.map((pokemon, i) => {

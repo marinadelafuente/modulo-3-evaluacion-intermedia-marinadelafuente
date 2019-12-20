@@ -1,0 +1,31 @@
+.item-list {
+    border: black solid 0.1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    width: 10.5rem;
+    background-color: rgb(217, 226, 235);
+}
+
+.name {
+    text-transform: capitalize;
+    text-align: center;
+    border-top: solid black 0.1rem;
+    padding: 0.5rem;
+}
+
+.types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: solid black 0.1rem;
+
+    &__item {
+
+        border-radius: 0.5rem;
+        background-color: grey;
+        color: white;
+        text-transform: uppercase;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+}
